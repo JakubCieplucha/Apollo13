@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="pane" layoutX="250.0" prefHeight="100.0" prefWidth="100.0" />
+      <TextField fx:id="heightField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="611.0" layoutY="134.0" promptText="Current Height" />
+      <TextField fx:id="fuelTankField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="611.0" layoutY="86.0" promptText="Fuel left" />
+      <TextField fx:id="fuelConsumptionField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="611.0" layoutY="36.0" promptText="Fuel Consumption" />
+      <Label layoutX="501.0" layoutY="40.0" text="Fuel Consumption" textFill="WHITE" />
+      <Label layoutX="553.0" layoutY="90.0" text="Fuel Left" textFill="WHITE" />
+      <Label layoutX="562.0" layoutY="138.0" text="Height" textFill="WHITE" />
+      <Label layoutX="555.0" layoutY="180.0" text="Velocity" textFill="WHITE" />
+      <TextField fx:id="velocityField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="611.0" layoutY="176.0" promptText="current Velocity" />
+      <Button fx:id="quitButton" layoutX="708.0" layoutY="561.0" mnemonicParsing="false" onAction="#quitBtnClicked" text="QUIT" />
+      <TextField fx:id="timeField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="611.0" layoutY="219.0" promptText="Time" />
+      <Label layoutX="532.0" layoutY="223.0" text="Time Passed" textFill="WHITE" />
+      <Button fx:id="returnToMenuBtn" layoutX="165.0" layoutY="494.0" mnemonicParsing="false" onAction="#returnAction" prefHeight="80.0" prefWidth="270.0" text="Return to menu " visible="false" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ScatterChart fx:id="chart1" animated="false" layoutX="490.0" layoutY="277.0" prefHeight="243.0" prefWidth="295.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" tickLabelFill="WHITE" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" tickLabelFill="WHITE" />
+        </yAxis>
+      </ScatterChart>
+      <TextField fx:id="playerNameTxt" layoutX="99.0" layoutY="273.0" prefHeight="54.0" prefWidth="250.0" text="Your Player Name">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Button fx:id="beginBtn" layoutX="136.0" layoutY="355.0" mnemonicParsing="false" onAction="#beginClicked" prefHeight="44.0" prefWidth="193.0" text="Start" />
+   </children>
+</AnchorPane>

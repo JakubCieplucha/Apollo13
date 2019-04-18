@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Instructions">
+   <children>
+      <Label layoutX="35.0" layoutY="19.0" prefHeight="474.0" prefWidth="687.0" text="This game will let you realize your life long dream of becoming an Astronout.Take the reins as the pilot of the famed Apollo 13 mission and attempt to land a rocket on the surface of the moon.The controls are fairly easy.By pressing the UP and DOWN arrow keys you will control the rate at which the rockets fuel is being burnt.But be carefull because you onlu posses a limited amount of thet resource.You will begin 50 000 m above the surface and attempt to land the vessel safely.That means that when your rocket touches the moonits velocity has to be between -2 to 2 m/s or you along with all your crew will crash and burn while the whole world wathes.So are you ready to become a hero ?" textFill="#e82913" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="startBtn" layoutX="235.0" layoutY="486.0" mnemonicParsing="false" onAction="#BegginGame" prefHeight="76.0" prefWidth="290.0" text="Start">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

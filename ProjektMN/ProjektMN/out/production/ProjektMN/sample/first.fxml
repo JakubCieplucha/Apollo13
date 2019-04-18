@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.First">
+   <children>
+      <Button layoutX="290.0" layoutY="144.0" mnemonicParsing="false" onAction="#startBtnClicked" prefHeight="71.0" prefWidth="193.0" text="Start">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="290.0" layoutY="319.0" mnemonicParsing="false" onAction="#instructionsBtnClickedBtnClicked" prefHeight="71.0" prefWidth="193.0" text="Instructions">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="scoreboardBtn" layoutX="290.0" layoutY="233.0" mnemonicParsing="false" onAction="#scoreBtnClicked" prefHeight="71.0" prefWidth="193.0" text="Scoreboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
